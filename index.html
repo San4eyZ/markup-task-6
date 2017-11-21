@@ -3,7 +3,280 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<section class="top-section">
+    <div class="position">
+        <a class="position__link" href="#">Екатеринбург</a>
+    </div>
+    <div class="settings">
+        <a href="#" class="settings__link">Настройка</a>
+    </div>
+    <div class="user-block">
+        <a href="#" class="user-block__login">login</a><br>
+        <a href="#" class="user-block__mail">Почта
+            <span class="user-block__mail-count">138</span>
+        </a>
+    </div>
+</section>
+<div class="container top-block__wrapper">
+    <section class="fresh-news">
+        <a href="#" class="fresh-news__now-media">Сейчас в СМИ</a>
+        <a href="#" class="fresh-news__now-position">в Екатеринбурге</a>
+        <span class="fresh-news__date">13 ноября, понедельник 16:57</span>
+        <ul class="news-list">
+            <li class="news-list__item">
+                В кремле ответили на слова экс-главы ЦРУ о "запуганном" Путиным Трампе</li>
+            <li class="news-list__item">
+                Число жертв землетрясения в Иране и Ираке превысило 350 человек</li>
+            <li class="news-list__item">
+                Вероятной целью проникновения в РФ украинского дрона назвали шпионаж</li>
+            <li class="news-list__item">
+                Кремль рассказал о местнахождении не явившегося в суд Сечина</li>
+            <li class="news-list__item">
+                Кремль прокомментировал перенос послания Путина Федеральному собранию</li>
+        </ul>
+        <div class="currencies">
+            <div class="currencies__item">
+                <span class="currencies__name">USD ЦБ</span>
+                59,18
+                <span class="currencies__change">-0,10</span>
+            </div>
+            <div class="currencies__item">
+                <span class="currencies__name">EUR ЦБ</span>
+                68,92
+                <span class="currencies__change">-0,06</span>
+            </div>
+            <div class="currencies__item">
+                <span class="currencies__name">НЕФТЬ</span>
+                63,44
+                <span class="currencies__change">-0.27%</span>
+            </div>
+            <a href="#" class="currencies__rest">&#x25CF;&#x25CF;&#x25CF;</a>
+        </div>
+    </section>
+    <div class="ads">
+        <figure>
+            <img src="ad__image-1.jpg" alt="image" class="ads__image">
+            <figcaption class="ads__offer">Акция до 1.12.2017</figcaption>
+        </figure>
+        <a href="#" class="ads__link">32 ГБ студентам на Яндекс.Диске</a>
+        <p class="ads__description">Бесплатно и навсегда</p>
+        <div class="ads__age">18+</div>
+    </div>
+    <section class="search">
+        <div class="search__categories">
+            <a href="#" class="search__category-link">Видео</a>
+            <a href="#" class="search__category-link">Картинки</a>
+            <a href="#" class="search__category-link">Новости</a>
+            <a href="#" class="search__category-link">Карты</a>
+            <a href="#" class="search__category-link">Маркет</a>
+            <a href="#" class="search__category-link">Переводчик</a>
+            <a href="#" class="search__category-link">Музыка</a>
+            <a href="#" class="search__category-link">ещё</a>
+        </div>
+        <div class="search-field-wrapper">
+            <input type="text" class="search-field" title="Введите ваш запрос">
+            <button class="search__voice btn_search-field">
+                <img src="images/search.png" alt="mic" class="search__voice-img">
+            </button>
+            <button class="search__keyboard btn_search-field">
+                <img src="images/keyboard.png" alt="kb" class="search__voice-img">
+            </button>
+            <button class="search__find">Найти</button>
+        </div>
+        <div class="search__example-box">
+            Найдется всё. Например,
+            <span class="search__example">Выхожу я один на дорогу</span>
+        </div>
+    </section>
+    <div class="ads banner_big">
+        <img src="ad__image-2.jpg" alt="image" class="ads__image">
+    </div>
+</div>
+<div class="widget-box container">
+    <div class="widgets-wrapper">
+        <section class="visiting widget">
+            <h2 class="visiting__heading widget__heading">Посещаемое</h2>
+            <ul class="visiting__list">
+                <li class="visiting__item">
+                    <span class="visiting__category">Маркет</span>китайская распродажа
+                </li>
+                <li class="visiting__item">
+                    <span class="visiting__category">Авто.ру</span>Туссан третьей серии
+                </li>
+                <li class="visiting__item">
+                    <span class="visiting__category">Недвижимость</span>продажа студии
+                </li>
+                <li class="visiting__item">
+                    <span class="visiting__category">Работа</span>охранником
+                </li>
+                <li class="visiting__item">
+                    <span class="visiting__category">Здоровье</span>врач на связи
+                </li>
+                <li class="visiting__item">
+                    <span class="visiting__category">Коллекции</span>как мелировать волосы
+                </li>
+                <li class="visiting__item">
+                    <span class="visiting__category">Авиабилеты</span>из Екатеринбурга
+                </li>
+            </ul>
+        </section>
+        <section class="best-joke widget">
+            <h2 class="best-joke__heading widget__heading">Лучшие анекдоты</h2>
+            <div class="joke">
+                <div class="joke__category">Раздел: <a href="#">Медицинские</a>.</div>
+                - Вас лечить хорошо или бесплатно?
+            </div>
+            <a href="#" class="best-joke__show-more">Показать ещё</a>
+        </section>
+    </div>
+    <div class="widgets-wrapper">
+        <section class="tv-program widget">
+            <div class="tv-program__header-wrapper">
+                <h2 class="tv-program__heading widget__heading">Телепрограмма</h2>
+                <a href="#" class="tv-program__link">ТВ онлайн &triangleright;</a>
+            </div>
+            <ul class="tv-program__list">
+                <li class="tv-program__item">
+                    16:00 Понять. Простить
+                    <span class="tv-program__channel">41 Домашний</span>
+                </li>
+                <li class="tv-program__item">
+                    16:00 Место встречи
+                    <span class="tv-program__channel">НТВ</span>
+                </li>
+                <li class="tv-program__item">
+                    16:00 Детективы
+                    <span class="tv-program__channel">Пятый канал</span>
+                </li>
+                <li class="tv-program__item">
+                    16:00 Новости
+                    <span class="tv-program__channel">РЕН ТВ</span>
+                </li>
+                <li class="tv-program__item">
+                    16:00 Гадалка
+                    <span class="tv-program__channel">ТВ-3</span>
+                </li>
+                <li class="tv-program__item">
+                    16:00 Реальные пацаны
+                    <span class="tv-program__channel">ТНТ</span>
+                </li>
+            </ul>
+        </section>
+        <section class="auto-news widget">
+            <h2 class="auto-news__heading widget__heading">Автомобильные новости</h2>
+            <ul class="auto-news__list">
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными горами в стране гласных и согласных
+                    живут рыбные тексты.
+                    <span class="auto-news__time">12:01</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными горами в стране гласных и согласных
+                    живут рыбные тексты. Моей маленький живет запятых продолжил.
+                    <span class="auto-news__time">12:02</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными горами в стране гласных и согласных
+                    живут рыбные тексты. Пустился, встретил переписывается.
+                    <span class="auto-news__time">12:03</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными горами в стране гласных и согласных
+                    живут рыбные тексты. Лучше даже силуэт пояс даль последний! Свое
+                    языком ручеек имени рукописи города собрал. Своего себя то о
+                    алфавит рукописи не.
+                    <span class="auto-news__time">12:04</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными горами в стране гласных и согласных
+                    живут рыбные тексты. Рекламных, языкового великий. Встретил
+                    подзаголовок щеке, переписывается власти журчит грамматики!
+                    <span class="auto-news__time">12:05</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными, горами в стране гласных и согласных
+                    живут рыбные тексты. Повстречался, жизни первую? Власти залетают
+                    ему, своих снова однажды великий подзаголовок пояс даль?
+                    <span class="auto-news__time">12:06</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными горами в стране, гласных и согласных
+                    живут рыбные тексты. Агентство его напоивший но рыбными первую
+                    однажды всеми использовало, заголовок которое большой силуэт ручеек
+                    за ты над!
+                    <span class="auto-news__time">12:07</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                    рыбные тексты.
+                    <span class="auto-news__time">12:08</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за, словесными горами в стране гласных и согласных живут
+                    рыбные тексты. Пустился однажды всеми, предупреждал, свое подпоясал моей
+                    рыбного инициал которое если взгляд залетают то курсивных домах!
+                    <span class="auto-news__time">12:09</span>
+                </li>
+                <li class="auto-news__item">
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут
+                    рыбные тексты. Заголовок.
+                    <span class="auto-news__time">12:10</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="widgets-wrapper">
+        <section class="weather widget">
+            <div class="weather__wrapper">
+                <h2 class="weather__heading widget__heading">Погода</h2>
+                <img src="weather.png" alt="img" class="weather__image">
+                <span>-3 &deg;C</span>
+            </div>
+            Вечер -5, ночь -7
+        </section>
+        <section class="traffic widget">
+            <div class="weather__wrapper">
+                <h2 class="weather__heading widget__heading">Пробки</h2>
+                <img src="traffic.png" alt="img" class="weather__image">
+                <span>4 балла</span>
+            </div>
+            Местами затруднения
+        </section>
+        <section class="map widget">
+            <a href="#" class="map__link">Такси</a>
+            <a href="#" class="map__link">Расписания</a><br>
+            <a href="#" class="map__link">Междугородные автобусы</a>
+        </section>
+        <section class="poster widget">
+            <h2 class="poster__heading widget__heading">Афиша</h2>
+            <ul class="poster__list">
+                <li class="poster__item">
+                    Субурбикон
+                    <span class="poster__side-info">Премьера в чт</span>
+                </li>
+                <li class="poster__item">
+                    Последний богатырь
+                    <span class="poster__side-info">Приключения</span>
+                </li>
+                <li class="poster__item">
+                    Фиксики: Большой секрет
+                    <span class="poster__side-info">Мультфильм</span>
+                </li>
+                <li class="poster__item">
+                    Тор: Рагнарёк
+                    <span class="poster__side-info">Фентези</span>
+                </li>
+                <li class="poster__item">
+                    Убийство в восточном...
+                    <span class="poster__side-info">Драма</span>
+                </li>
+            </ul>
+            <a href="#" class="poster__link">Концерты - Brainstorm</a>
+        </section>
+    </div>
+</div>
 </body>
 </html>
