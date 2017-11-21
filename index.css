@@ -339,3 +339,26 @@ li:not(:last-child) {
     margin-bottom: 30px;
 }
 
+.auto-news__list {
+    height: 265px;
+    overflow: auto;
+}
+
+.weather__wrapper,
+.traffic__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.traffic__image,
+.weather__image,
+.weather__wrapper span,
+.traffic__wrapper span {
+    align-self: center;
+}
+
+.map__link {
+    color: #000;
+    margin-right: 15px;
+    font-weight: bold;
+}
