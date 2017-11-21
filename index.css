@@ -179,8 +179,32 @@ li:not(:last-child) {
     right: 0;
 }
 
+.ads__image {
+    width: 100%;
+}
+
+.banner_big {
+    margin: 10px 0 20px;
+}
+
 .search {
     grid-column: 1 / -1;
+    position: relative;
+}
+
+.yandex {
+    position: absolute;
+    left: -25px;
+    top: 14px;
+
+    font-size: 3.5em;
+    font-stretch: condensed;
+
+    transform: translate(-100%);
+}
+
+.yandex::first-letter {
+    color: #f00;
 }
 
 .search__category-link {
@@ -262,6 +286,19 @@ li:not(:last-child) {
     background: transparent;
 }
 
+.search__keyboard-img,
+.search__voice-img {
+    width: 25px;
+    height: 25px;
+    opacity: .3;
+    transition: .5s;
+}
+
+.search__keyboard:hover > .search__keyboard-img,
+.search__voice:hover > .search__voice-img {
+    opacity: 1;
+}
+
 .search-field {
     border: none;
     outline: none;
@@ -332,11 +369,15 @@ li:not(:last-child) {
 
     border-radius: 5px;
     text-align: center;
-    background: linear-gradient(0, #04a2f9, #736ff9);
+    background: linear-gradient(90deg, #04a2f9, #736ff9);
 }
 
 .widget {
     margin-bottom: 30px;
+}
+
+.auto-news {
+    position: relative;
 }
 
 .auto-news__list {
@@ -344,10 +385,37 @@ li:not(:last-child) {
     overflow: auto;
 }
 
+.auto-news__heading {
+    position: relative;
+}
+
+.auto-news__heading::after,
+.auto-news::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    height: 30px;
+
+    background-image: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0));
+}
+
+.auto-news::after {
+    bottom: 0;
+
+    background-image: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+}
+
+.auto-news__list::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 .weather__wrapper,
 .traffic__wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
 }
 
 .traffic__image,
@@ -355,10 +423,16 @@ li:not(:last-child) {
 .weather__wrapper span,
 .traffic__wrapper span {
     align-self: center;
+    text-align: center;
 }
 
 .map__link {
     color: #000;
     margin-right: 15px;
     font-weight: bold;
+}
+
+.weather__image,
+.traffic__image {
+    height: 100%;
 }
