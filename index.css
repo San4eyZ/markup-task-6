@@ -65,7 +65,9 @@ li:not(:last-child) {
 }
 
 .user-block__login {
-    display: block;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: auto;
 
     font-weight: bold;
     color: #000;
