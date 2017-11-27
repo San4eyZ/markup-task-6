@@ -300,6 +300,7 @@ li:not(:last-child) {
 }
 
 .search-field {
+    font-size: 1.2em;
     border: none;
     outline: none;
     padding-left: 15px;
